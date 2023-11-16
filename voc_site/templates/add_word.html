@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add_words</title>
+</head>
+<body>
+    <h1>Добавьте слова в словарь!</h1>
+    <form method="POST" action="">
+        <label>Слово на английском</label>
+        <input type="text" id="english_word" name="english_word" required>
+        <br>
+        <label>Перевод слова</label>
+        <input type = "text" id='russian_word' name="russian_word" required>
+        <br>
+        <input type="submit" value="Отправить">
+        {% csrf_token %}
+    </form>
+</body>
+</html>
